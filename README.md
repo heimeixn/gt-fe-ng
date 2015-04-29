@@ -1,51 +1,32 @@
-![模块化开发](views/img/cubes.png)
-
-## [scrat](https://github.com/scrat-team/scrat) 官网项目
-
-> http://scrat-team.github.io/
->
-> ![二维码](views/img/qrcode.png)
->
-> [![Build Status](https://travis-ci.org/scrat-team/scrat-site.svg?branch=master)](https://travis-ci.org/scrat-team/scrat-site)
-
-```bash
-npm install -g scrat
-scrat -v
-```
-
-![工具版本](components/pages/quick-start/version.gif)
-
-## 功能
-
-- 模块化
-    - [x] [模块化开发](http://scrat-team.github.io/#!/modular)
-    - [x] [按版本发布](http://scrat-team.github.io/#!/settings?title=version)
-    - [x] [模块生态](http://scrat-team.github.io/#!/components)
-- 性能优化
-    - [x] [按需加载](http://scrat-team.github.io/#!/framework?title=scrat.js)
-    - [x] [请求合并](http://scrat-team.github.io/#!/framework?title=3. 网络请求)
-    - [x] [本地缓存](http://scrat-team.github.io/#!/framework?title=4. 本地缓存)
-- 自动化
-    - [x] [代码压缩](http://scrat-team.github.io/#!/settings?title=settings.optimizer.uglify-js)
-    - [x] [代码校验](http://scrat-team.github.io/#!/settings?title=settings.lint.jshint)
-    - [x] [CSS雪碧图](http://scrat-team.github.io/#!/settings?title=settings.spriter.csssprites)
-- 本地调试
-    - [x] [本地服务器](http://scrat-team.github.io/#!/command?title=scrat server start)
-    - [x] [文件监听](http://scrat-team.github.io/#!/command?title=本地开发)
-    - [x] [自动刷新](http://scrat-team.github.io/#!/command?title=本地开发)
-- 其他功能
-    - [x] [资源内嵌](http://scrat-team.github.io/#!/todo)
-    - [x] [多语言编译](http://scrat-team.github.io/#!/settings?title=settings.parser.stylus)
-    - [x] [项目脚手架](http://scrat-team.github.io/#!/command?title=scrat init)
-
-
+![金桐网前端开发]
 ## 文档
+1.安装 nodejs环境
+2.在windows下进入node.js command prompt，在mac下打开命令行窗口
+3.执行 npm install -g fis    执行 fis -v 确定安装成功
+4.执行 npm install -g scrat    执行 scrat -v 确定安装成功
+5.安装git
+6.下载项目 git clone ....
+7.进入项目目录
+8.执行 scrat install
+9.构建项目 执行 scrat release
+10.浏览项目 执行 scrat server start
+11.文件监听+自动刷新 scrat release -wL
+12.目录结构
+project
+  ├─ component_modules (生态模块目录)
+  ├─ components        (工程模块目录)
+  │  └─ foo
+  │     ├─ icon.png
+  │     ├─ foo.css
+  │     ├─ foo.tpl
+  │     └─ foo.js
+  ├─ views             (非模块化资源)
+  ├─ ...
 
-* [快速开始](http://scrat-team.github.io/#!/quick-start)
-* [模块开发](http://scrat-team.github.io/modular)
-* [前端框架](http://scrat-team.github.io/framework)
-* [模块生态](http://scrat-team.github.io/components)
-* [工具命令](http://scrat-team.github.io/command)
-* [工具配置](http://scrat-team.github.io/settings)
-* [项目实战](http://scrat-team.github.io/practice)
-* [幕后花絮](https://github.com/fouber/blog/issues/2)
+13.文档地址 http://scrat-team.github.io/#!/quick-start
+14.增加了jquery和angularjs框架，弹出框等需要商议
+15.简单文档编辑器用xhEditor，复杂编辑器用uEditor
+16.模块化开发，避免写重复代码
+17.
+
+

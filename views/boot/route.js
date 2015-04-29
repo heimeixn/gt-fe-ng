@@ -13,5 +13,11 @@ $routeProvider.when('/customer', {
 $routeProvider.when('/people', {
     resource:'pages/people'
 });
+$routeProvider.when('/recommend', {
+    resource:'pages/recommend'
+});
+$routeProvider.when('/search', {
+    resource:'pages/search'
+});
 
 $routeProvider.run("app.route");

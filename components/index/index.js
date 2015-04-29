@@ -68,7 +68,7 @@ var indexUtil = {
     },
     /**
      * 设置页面title
-     * @param {String} title
+     * @param {String} titletools
      */
     title : function(title){
         document.title = title;
