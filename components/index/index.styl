@@ -1,0 +1,46 @@
+/**
+ * 可以在css的注释中使用 `@require` 来声明依赖关系
+ * @require(stylus/reset)
+ */
+li
+ list-style:none
+clearfix:after
+  content: ' '
+  display: block
+  overflow: hidden
+  clear: both
+  height: 0
+  line-height: 0
+.site
+  background: #fff
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+  margin: 5px auto auto
+.site-header
+  border-bottom:2px solid #f39800
+.site-menu
+  background: #f2f2f2
+.site-content
+  padding:10px
+  min-height:360px
+  background:#fff
+.site-footer
+  margin-top:10px
+.site-views
+  width: 100%
+  height: 100%
+.site-view
+  opacity: 0
+  -webkit-transform: translate3d(0, 100px, 0)
+  transform: translate3d(0, 100px, 0)
+  -webkit-transition: opacity 0.2s ease-out 0.2s, -webkit-transform 0.4s ease-out
+  transition: opacity 0.2s ease-out 0.2s, transform 0.4s ease-out
+.site-view.active
+  opacity: 1
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+  -webkit-overflow-scrolling: touch
+.site-view-inner
+  padding: 3%
+.transition-all
+  -webkit-transition: all 0.2s ease-out
+  transition: all 0.2s ease-out

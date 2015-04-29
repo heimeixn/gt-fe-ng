@@ -8,6 +8,6 @@ module.exports = {
         // handlebars由于缺少相应的压缩插件因此暂时不能在预
         // 编译阶段做压缩。选择tpl还是handlebars可以自由选
         // 择
-        dom.innerHTML = __inline('footer.tpl');
+        dom.innerHTML = __inline('footer.html');
     }
 };

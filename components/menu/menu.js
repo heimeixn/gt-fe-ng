@@ -27,20 +27,8 @@ exports.render = function(dom){
     // 可以直接内嵌这里文件当做js函数执行
     var tpl = __inline('menu.tpl');
 
-    // 模板数据
-    var data = {
-        // 使用__uri函数来定位任意工程文件，scrat构建之后，会
-        // 将其替换为发布地址，这样工程就不用关心部署相关问题了
-        logo: __uri('logo.png'),
-        home: '/#!/index',
-        views: exports.views,
-        links: exports.links
-    };
-
-    data.height = (data.views.length + data.links.length) * 37;
-
     // 使用模板+数据得到html
-    dom.innerHTML = tpl(data);
+    dom.innerHTML = tpl;
 
     var isSupportTouch = !!('ontouchend' in document);
     var eventType = isSupportTouch ? 'touchend' : 'click';

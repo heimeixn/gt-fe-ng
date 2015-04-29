@@ -4,27 +4,20 @@
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="true"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="format-detection" content="telephone=no"/>
-<title>Scrat - webapp模块化开发体系</title>
-<link rel="stylesheet" type="text/css" href="lib/reset/reset.css">
+<title>模块化开发体系</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 </head>
 <body>
 <div class="site">
-    <div class="site-menu" id="site-menu"></div>
-    <div class="site-content">
-    	请输入您的姓名: <input type="text" ng-model="yourname" placeholder="World">
-		<hr>
-		欢迎你， 亲爱的{{ yourname || ''}}！
-        <div ng-view class="site-view" id="site-view"> 
-
-        </div>
-    </div>
-    <div id="site-footer" class="site-footer"></div>
-
+<div class="site-header" id="site-header"></div>
+<div class="site-menu" id="site-menu"></div>
+<div class="site-content" ng-view>
+</div>
+<div id="site-footer" class="site-footer"></div>
 </div>
 <script src="lib/lib.js"></script>
+<script>
+</script>
 </body>
 </html>
