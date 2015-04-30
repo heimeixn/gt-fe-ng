@@ -4,4 +4,3 @@ angular.module("app", ['ngRoute', 'app.route', 'app.run', 'app.config']).config(
             redirectTo: '/index'
         });
 }]);
-

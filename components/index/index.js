@@ -1,12 +1,44 @@
 'use strict';
 
 
-function LetterCtrl($scope) {
-    $scope.welcome = "欢迎";
-    console.log('yes');
+function shapeController($scope){
+    $scope.message = "In shape controller";
+    $scope.type = "Shape";
 }
 
-module.exports = ['$scope', LetterCtrl]
+function nameController($scope) {
+   $scope.student = {
+      firstName: "Elena",
+      lastName: "King",
+      fees:500,
+      subjects:[
+         {name:'Physics',marks:70},
+         {name:'Chemistry',marks:80},
+         {name:'Math',marks:65}
+      ],
+      fullName: function() {
+         var studentObject;
+         studentObject = $scope.student;
+         return studentObject.firstName + " " + studentObject.lastName;
+      } 
+    }
+    $scope.reset = function(){
+        console.log('reset!!!');
+        $scope.firstName = "Mahesh";
+        $scope.lastName = "Parashar";
+        $scope.fees = "2341"
+    }
+    $scope.remote = function(){
+        var url= "data.txt";
+        $.get(url,function(response) {
+            $scope.aaaa = response; 
+        });
+    }
+}
+
+module.exports = ['$scope', nameController]
+
+
 // require依赖的文件
 var header = require('header');
 var menu = require('menu');

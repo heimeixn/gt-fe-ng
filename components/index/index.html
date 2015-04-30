@@ -1,6 +1,63 @@
-请输入您的姓名: <input type="text" ng-model="yourname" placeholder="World">
-<hr>
-欢迎你， 亲爱的{{ yourname || ''}}！！！！
+<!--
+<div ng-controller="shapeController">
+      <p>{{message}} <br/> {{type}} </p>
+</div>
+-->
 <div class="site-view" id="site-view"> 
-asdfasdfasdf
+请输入您的姓名: <input type="text" ng-model="yourname" placeholder="World">
+<p>欢迎你， 亲爱的{{ yourname || ''}}！！！！<span ng-bind="yourname"></span>!</p>
+</div>
+<hr/>
+<div ng-app="" ng-init="countries=[{locale:'en-US',name:'United States'},
+                                    {locale:'en-GB',name:'United Kingdom'},
+                                    {locale:'en-FR',name:'France'}]">
+   <p>List of Countries with locale:</p>
+   <ol>
+      <li ng-repeat="country in countries">
+         {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+      </li>
+   </ol>
+</div>
+<input type="checkbox" ng-model="enableDisableButton">Disable Button
+<button ng-disabled="enableDisableButton">Click Me!</button><br/>
+<input type="checkbox" ng-model="showHide1">Show Button
+<button ng-show="showHide1">Click Me!</button><br/>
+<input type="checkbox" ng-model="showHide2">Hide Button
+<button ng-hide="showHide2">Click Me!</button><br/>
+Total click: {{ clickCounter }}
+<button ng-click="clickCounter = clickCounter + 1">Click Me!</button>
+<hr/>
+<div ng-app="" ng-init="quantity=1;cost=30; student={firstname:'Mahesh',lastname:'Parashar',rollno:101};marks=[80,90,75,73,60]">
+   <p>Hello {{student.firstname + " " + student.lastname}}!</p>   
+   <p>Expense on Books : {{cost * quantity}} Rs</p>
+   <p>Roll No: {{student.rollno}}</p>
+   <p>Marks(Math): {{marks[3]}}</p>
+</div>
+<hr/>
+<script>
+
+</script>
+<div ng-controller="nameController">
+<div ng-include="subjects.html"></div>
+<table border="0">
+<tr><td>Enter first name:</td><td><input type="text" ng-model="student.firstName"></td></tr>
+<tr><td>Enter last name: </td><td><input type="text" ng-model="student.lastName"></td></tr>
+<tr><td>Enter fees: </td><td><input type="text" ng-model="student.fees"></td></tr>
+<tr><td>Enter subject: </td><td><input type="text" ng-model="subjectName"></td></tr>
+<tr><td clos="2"><button ng-click="reset()">Reset</button><br/>
+获取远程数据：<button ng-click="remote()">我是谁？</button><span ng-bind="aaaa"></span></td></tr>
+</table>
+<br/>
+<table border="0">
+<tr><td>Name in Upper Case: </td><td>{{student.fullName() | uppercase}}</td></tr>
+<tr><td>Name in Lower Case: </td><td>{{student.fullName() | lowercase}}</td></tr>
+<tr><td>fees: </td><td>{{student.fees | currency}}</td></tr>
+<tr><td>Subject:</td><td>
+<ul>
+   <li ng-repeat="subject in student.subjects | filter: subjectName |orderBy:'marks'">
+      {{ subject.name + ', marks:' + subject.marks }}
+   </li>
+</ul>
+</td></tr>
+</table>
 </div>
