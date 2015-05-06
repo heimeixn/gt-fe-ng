@@ -1,0 +1,79 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'scrat@lastest' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'scrat@lastest', null ]
+5 verbose cache add name=undefined spec="scrat@lastest" args=["scrat@lastest",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'scrat@lastest',
+6 verbose parsed url   path: 'scrat@lastest',
+6 verbose parsed url   href: 'scrat@lastest' }
+7 verbose cache add name="scrat" spec="lastest" args=["scrat","lastest"]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'lastest',
+8 verbose parsed url   path: 'lastest',
+8 verbose parsed url   href: 'lastest' }
+9 verbose addNamed [ 'scrat', 'lastest' ]
+10 verbose addNamed [ null, null ]
+11 silly lockFile 2635fd79-scrat-lastest scrat@lastest
+12 verbose lock scrat@lastest /Users/gintong/.npm/2635fd79-scrat-lastest.lock
+13 info addNameTag [ 'scrat', 'lastest' ]
+14 verbose request where is /scrat
+15 verbose request registry https://registry.npmjs.org/
+16 verbose request id e9324e09307d0498
+17 verbose url raw /scrat
+18 verbose url resolving [ 'https://registry.npmjs.org/', './scrat' ]
+19 verbose url resolved https://registry.npmjs.org/scrat
+20 verbose request where is https://registry.npmjs.org/scrat
+21 info trying registry request attempt 1 at 18:53:54
+22 verbose etag "CKW8ZILYSDU5LPQFOIRBXRLKF"
+23 http GET https://registry.npmjs.org/scrat
+24 http 200 https://registry.npmjs.org/scrat
+25 silly registry.get cb [ 200,
+25 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly registry.get     etag: '"1JV0KVSLWTQTE4DCT7KGGWD28"',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'cache-control': 'max-age=60',
+25 silly registry.get     'content-length': '93293',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     date: 'Mon, 04 May 2015 10:54:14 GMT',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '0',
+25 silly registry.get     connection: 'keep-alive',
+25 silly registry.get     'x-served-by': 'cache-nrt6122-NRT',
+25 silly registry.get     'x-cache': 'MISS',
+25 silly registry.get     'x-cache-hits': '0',
+25 silly registry.get     'x-timer': 'S1430736853.764749,VS0,VE750',
+25 silly registry.get     vary: 'Accept' } ]
+26 silly lockFile 2635fd79-scrat-lastest scrat@lastest
+27 silly lockFile 2635fd79-scrat-lastest scrat@lastest
+28 error notarget No compatible version found: scrat@'lastest'
+28 error notarget Valid install targets:
+28 error notarget ["0.0.1","0.0.2","0.0.3","0.0.5","0.0.6","0.0.7","0.0.8","0.0.9","0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.6","0.1.7","0.1.8","0.1.10","0.1.11","0.1.12","0.1.13","0.2.0","0.2.0-1","0.2.0-2","0.2.0-3","0.2.0-4","0.2.1","0.2.2","0.2.3","0.2.3-1","0.2.3-2","0.2.3-3","0.2.3-4","0.2.3-5","0.2.3-6","0.2.3-7","0.2.3-8","0.2.4","0.2.4-1","0.2.4-2","0.2.4-3","0.2.4-4","0.2.4-5","0.2.4-6","0.2.4-7","0.2.4-8","0.2.4-9","0.2.4-10","0.2.4-11","0.2.4-12","0.2.4-13","0.2.4-14","0.2.5","0.2.5-1","0.2.5-2","0.2.6","0.2.7","0.2.7-1","0.2.8","0.2.8-1","0.3.0-1","0.3.0-2","0.3.0-3","0.3.0-4","0.3.1","0.3.1-1","0.3.2","0.3.2-1","0.3.2-2","0.3.2-3","0.3.3","0.3.4","0.3.5","0.3.5-1","0.3.5-2","0.3.5-3","0.3.5-4","0.4.0","0.4.1","0.4.2","0.4.3","0.4.4"]
+28 error notarget
+28 error notarget This is most likely not a problem with npm itself.
+28 error notarget In most cases you or one of your dependencies are requesting
+28 error notarget a package version that doesn't exist.
+29 error System Darwin 14.1.0
+30 error command "node" "/usr/local/bin/npm" "install" "-g" "scrat@lastest"
+31 error cwd /Users/gintong/web/gt-fe-ng
+32 error node -v v0.10.35
+33 error npm -v 1.4.28
+34 error code ETARGET
+35 verbose exit [ 1, true ]

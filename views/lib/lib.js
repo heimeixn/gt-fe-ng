@@ -2,7 +2,8 @@
  * 使用__inline函数来嵌入其他文件
  */
 __inline('jquery/jquery.js');
- __inline('scrat/scrat.js');
+__inline('scrat/scrat.js');
+//__inline('bootstrap/bootstrap.js');
 __inline('angular/angular.js');
 __inline('angular/angular.route.js');
 __inline('angular/angular.resource.js');
